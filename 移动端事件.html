@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,target-densitydpi=device-dpi,user-scalable=no">
+	<title>移动端事件</title>
+	<style>
+	#box{
+		width:100px;
+		height:100px;
+		background:red;
+	}
+	</style>
+</head>
+<body>
+	<div id="box"></div>
+	<script type="text/javascript">
+	var oDiv=document.getElementById("box");
+	console.log(oDiv);
+	oDiv.ontouchstart=function(e){
+		console.log(e.touches);
+
+	}
+	oDiv.ontouchmove=function(e){
+		//console.log(2);
+		
+	}
+	oDiv.ontouchend=function(e){
+		//console.log(3);
+	}
+	</script>
+</body>
+</html>
